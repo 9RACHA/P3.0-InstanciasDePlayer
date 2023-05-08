@@ -21,15 +21,15 @@ public class NetworkCommandLine : MonoBehaviour
                case "server":
                    netManager.StartServer();
                    break;
-                   Debug.Log("Servidor");
+                //   Debug.Log("Servidor");
                case "host":
                    netManager.StartHost();
                    break;
-                   Debug.Log("Host");
+                //   Debug.Log("Host");
                case "client":
                    netManager.StartClient();
                    break;
-                   Debug.Log("Cliente");
+                //   Debug.Log("Cliente");
            }
        }
    }

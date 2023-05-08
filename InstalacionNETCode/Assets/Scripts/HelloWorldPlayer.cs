@@ -41,6 +41,12 @@ namespace HelloWorld
             return new Vector3(Random.Range(-3f, 3f), 1f, Random.Range(-3f, 3f));
         }
 
+        void Start()
+    {
+        //Debug.Log("Soy " + (IsHost ? "el anfitrión" : "un cliente"));
+       // Debug.Log($"Soy el jugador {networkObject.NetworkObjectId} {(IsHost ? "(anfitrión)" : "(cliente)")}");
+    }
+
         void Update()
         {
             transform.position = Position.Value;

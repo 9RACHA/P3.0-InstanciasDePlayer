@@ -24,9 +24,12 @@ namespace HelloWorld
 
         static void StartButtons()
         {
-            if (GUILayout.Button("Host")) NetworkManager.Singleton.StartHost();
+            if (GUILayout.Button("Host")) NetworkManager.Singleton.StartHost(); 
+            //Debug.Log("Host");
             if (GUILayout.Button("Client")) NetworkManager.Singleton.StartClient();
+            //Debug.Log("Cliente");
             if (GUILayout.Button("Server")) NetworkManager.Singleton.StartServer();
+            //Debug.Log("Servidor");
         }
 
         static void StatusLabels()
