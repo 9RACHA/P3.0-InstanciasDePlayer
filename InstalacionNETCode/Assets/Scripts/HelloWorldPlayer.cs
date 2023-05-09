@@ -13,6 +13,10 @@ namespace HelloWorld
             if (IsOwner)
             {
                 Move();
+                Debug.Log("Player spawned with NetworkId: " + NetworkObjectId);
+                
+                HelloWorldPlayer[] players = Object.FindObjectsOfType<HelloWorldPlayer>();
+                Debug.Log("Número de instancias de HelloWorldPlayer: " + players.Length);
             }
         }
 
