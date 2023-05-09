@@ -10,6 +10,8 @@ Entregables:
 
 Breve informe coa xustificación e as capturas se é o caso
 
+#
+
 Al principio la respuesta seria que hay dos jugadores y por lo tanto hay 2 instancias de player (jugador). Una de las instancias actúa como Anfitrión en modo Host (Cliente + Servidor), mientras que la otra instancia actúa como cliente. Por lo tanto, hay 2 instancias de player en total. 
 
 
