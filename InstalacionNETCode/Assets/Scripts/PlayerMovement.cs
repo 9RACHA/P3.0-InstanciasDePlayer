@@ -20,7 +20,7 @@ public class PlayerMovement : NetworkBehaviour
 
     void Start()
     {
-        Debug.Log($"Soy el jugador {networkObject.NetworkObjectId} {(IsHost ? "(anfitrión)" : "(cliente)")}");
+        Debug.Log($"Soy el jugador {networkObject.NetworkObjectId} {(IsHost ? "(Host)" : "(Cliente)")}");
     }
 
     void FixedUpdate()

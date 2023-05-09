@@ -6,6 +6,8 @@ namespace HelloWorld
 {
     public class HelloWorldPlayer : NetworkBehaviour
     {
+        private static int instancesCount = 0;
+
         public NetworkVariable<Vector3> Position = new NetworkVariable<Vector3>();
 
         public override void OnNetworkSpawn()
@@ -23,6 +25,9 @@ namespace HelloWorld
                 var randomPosition = GetRandomPositionOnPlane();
                 transform.position = randomPosition;
                 Position.Value = randomPosition;
+
+                instancesCount++;
+                Debug.Log($"Se ha creado una instancia de MyClass. Total de instancias: {instancesCount}");
             }
             else
             {
