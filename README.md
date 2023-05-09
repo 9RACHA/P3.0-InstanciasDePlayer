@@ -31,6 +31,10 @@ Sin embargo si hacemos el proceso inverso y mediante la Build seleccionamos Host
 
 ![image](https://github.com/9RACHA/P3.0-InstanciasDePlayer/assets/66274956/0afaf2c1-bb54-4910-aa91-06b63f09158d)
 
+La duda surge si considerar que la instancia son 2 por jugador es decir 4 o 2 en total  
+
+
+
 
 
 
