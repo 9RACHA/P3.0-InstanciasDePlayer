@@ -15,5 +15,16 @@ Al principio la respuesta seria que hay dos jugadores y por lo tanto hay 2 insta
 
 En definitiva si se ejecuta el ejecuta el proyecto desde Unity como Host:
 
+
+
 ![image](https://github.com/9RACHA/P3.0-InstanciasDePlayer/assets/66274956/3bfefebe-bd71-4dbb-8569-6e7458dca449)
+
+
+Al iniciar el proyecto como Host desde Unity, despues al hacer la build en la que esta seremos los clientes aparecera por consola de Unity lo siguiente:
+
+![image](https://github.com/9RACHA/P3.0-InstanciasDePlayer/assets/66274956/bd9e4704-9603-48bb-bbc2-54f6b4825a9b)
+
+
+
+
 
