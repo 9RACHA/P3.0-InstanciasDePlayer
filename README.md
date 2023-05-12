@@ -12,11 +12,15 @@ Breve informe coa xustificación e as capturas se é o caso
 
 #
 
-Al principio la respuesta seria que hay dos jugadores y por lo tanto hay 2 instancias de player (jugador). Una de las instancias actúa como Anfitrión en modo Host (Cliente + Servidor), mientras que la otra instancia actúa como cliente. Por lo tanto, hay 2 instancias de player en total. 
+Al principio la respuesta seria que hay 2 jugadores y por lo tanto hay 2 instancias de player (jugador). Una de las instancias actúa como Anfitrión en modo Host (Cliente + Servidor), mientras que la otra instancia actúa como cliente. Por lo tanto, hay 2 instancias de player en total. Pero esta no es la respuesta correcta.
 
+La instancia del host en Unity actuaría como el servidor y ejecutaría una instancia de player que funciona como el servidor del juego. Esta instancia se encargaría de gestionar la lógica del juego y de recibir y procesar las acciones enviadas por los clientes.
+
+En la máquina del cliente, al ejecutar la build del juego, se crearía una instancia de player para el cliente. Esta instancia se comunica con el servidor (instancia del host) para enviar y recibir información actualizada del juego.
+
+Dado que hay dos jugadores visibles en el juego (host y cliente), se necesitarían dos instancias en cada máquina para permitir la interacción entre ellos. En total, habría 4 instancias de player: una instancia de servidor en la máquina del host y una instancia de cliente en la máquina del host, y una instancia de servidor en la máquina del cliente y una instancia de cliente en la máquina del cliente.
 
 En definitiva si se ejecuta el ejecuta el proyecto desde Unity como Host:
-
 
 
 ![image](https://github.com/9RACHA/P3.0-InstanciasDePlayer/assets/66274956/3bfefebe-bd71-4dbb-8569-6e7458dca449)
@@ -31,7 +35,7 @@ Sin embargo si hacemos el proceso inverso y mediante la Build seleccionamos Host
 
 ![image](https://github.com/9RACHA/P3.0-InstanciasDePlayer/assets/66274956/0afaf2c1-bb54-4910-aa91-06b63f09158d)
 
-Para finalizar la respuesta seria 4 instancias si existe 1 Host y 1 Cliente ya que se generan 2 por cada uno respectivamente.
+Para finalizar la respuesta seria 4 instancias de player: si existe 1 Host y 1 Cliente ya que se generan 2 instancias por cada uno respectivamente.
 
 
 
