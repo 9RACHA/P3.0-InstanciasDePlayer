@@ -44,4 +44,3 @@ Para finalizar la respuesta seria 4 instancias de player: si existe 1 Host y 1 C
 
 
 
-
